@@ -32,7 +32,39 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* @font-face {
+  font-family: 'CustomFont';
+  src: url('./asset/CCMaladroit_W00_Regular.ttf') format('truetype');
+  font-weight: normal;
+} */
+
+@font-face {
+  font-family: 'ABeeZee';
+  src: url('./asset/ABeeZee-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'CCMaladroit';
+  src: url('./asset/CCMaladroit_W00_Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+
+body {
+  font-family: 'CCMaladroit', sans-serif;
+}
+
+p {
+  font-family: "ABeeZee", sans-serif;
+}
+
+.bold-text {
+  font-weight: bold;
 }
