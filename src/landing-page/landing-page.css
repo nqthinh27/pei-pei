@@ -15,93 +15,152 @@
     height: 300vh;
 }
 
-#landing-page h1 {
+#landing-page .section-1 h1,
+#landing-page .section-2 h1,
+#landing-page .section-3 h1 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 140px;
 }
-
-#landing-page h2 {
+#landing-page .section-1-mobile h1,
+#landing-page .section-2-mobile h1,
+#landing-page .section-3-mobile h1 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 80px;
 }
 
-#landing-page h3 {
+#landing-page .section-1 h2,
+#landing-page .section-2 h2,
+#landing-page .section-3 h2 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 58px;
+    font-size: 80px;
 }
-
-#landing-page h4 {
+#landing-page .section-1-mobile h2,
+#landing-page .section-2-mobile h2,
+#landing-page .section-3-mobile h2 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 40px;
 }
 
-#landing-page h5 {
+#landing-page .section-1 h3,
+#landing-page .section-2 h3,
+#landing-page .section-3 h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 58px;
+}
+#landing-page .section-1-mobile h3,
+#landing-page .section-2-mobile h3,
+#landing-page .section-3-mobile h3 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 30px;
 }
 
-#landing-page .section-1 {
+#landing-page .section-1 h4,
+#landing-page .section-2 h4,
+#landing-page .section-3 h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+#landing-page .section-1-mobile h4,
+#landing-page .section-2-mobile h4,
+#landing-page .section-3-mobile h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+
+#landing-page .section-1 h5,
+#landing-page .section-2 h5,
+#landing-page .section-3 h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+#landing-page .section-1-mobile h5,
+#landing-page .section-2-mobile h5,
+#landing-page .section-3-mobile h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+#landing-page .section-1-mobile {
     background-color: var(--pink);
     flex: 1;
 }
 
-#landing-page .section-2 {
+#landing-page .section-2-mobile {
     background-color: var(--black);
     flex: 1;
 }
 
-#landing-page .section-3 {
+#landing-page .section-3-mobile {
     background-color: var(--yellow);
     flex: 1;
 }
 
-#landing-page .section-1,
-#landing-page .section-2,
-#landing-page .section-3 {
+#landing-page .content-mobile {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* 
+section 1
+ */
+
+#landing-page .section-1-mobile,
+#landing-page .section-2-mobile,
+#landing-page .section-3-mobile {
     position: relative;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
 }
 
-.background-image {
+.background-image-mobile {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 90%;
     object-fit: cover;
     z-index: 0;
 }
 
-#landing-page .section-1 h1 {
+#landing-page .section-1-mobile h1 {
     font-weight: bold;
     color: var(--red);
-    -webkit-text-stroke: 8px #000;
+    -webkit-text-stroke: 5px #000;
+    text-shadow: 2px 2px 4px #000;
     padding-top: 5%;
 }
 
-#landing-page .button {
-    margin-top: 0.5rem;
-    padding: 15px 60px;
+
+#landing-page .button-mobile {
+    margin-top: 5px;
+    padding: 20px 60px;
     background-color: var(--red);
     color: #fff;
     border: 3px solid var(--black);
     transform: rotate(5deg);
 }
 
-#landing-page .text-section>* {
-    padding-bottom: 2rem;
+
+#landing-page .text-section-mobile>* {
+    padding-bottom: 5px;
 }
 
-#landing-page .button-section>* {
-    margin-right: 1rem;
-    margin-left: 1rem;
+#landing-page .button-section-mobile>* {
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 /*  
@@ -109,30 +168,32 @@ section 2
 */
 
 #landing-page .section-2 {
-    position: relative;
-    padding: 5rem;
-    box-sizing: border-box;
+    /* position: relative; */
+    /* box-sizing: border-box;
+    padding-left: 5rem;
+    padding-right: 5rem; */
 }
 
-#landing-page .section-2 .header {
+#landing-page .section-2-mobile .header-mobile {
+    padding-top: 5%;
     font-weight: bold;
     color: var(--red);
-    -webkit-text-stroke: 3px #fff;
+    -webkit-text-stroke: 1px #fff;
 }
 
-#landing-page .section-2 .content {
+#landing-page .section-2-mobile .content-mobile {
     color: #fff;
 }
 
-#landing-page .section-2 h5 {
-    text-align: start;
+#landing-page .section-2-mobile h5 {
+    text-align: center;
 }
 
-#landing-page .section-2 .token-supply {
-    text-align: start;
+#landing-page .section-2-mobile .token-supply-mobile {
+    text-align: center;
 }
 
-#landing-page .section-2 .token-supply>* {
+#landing-page .section-2-mobile .token-supply-mobile>* {
     margin-bottom: 0.5em;
 }
 
@@ -140,9 +201,7 @@ section 2
 section 3
  */
 
-#landing-page .section-3 {
-
-}
+#landing-page .section-3 {}
 
 #landing-page .section-3 .button-section {
     margin-top: 1rem;
@@ -155,20 +214,20 @@ section 3
     letter-spacing: 0.1em;
 }
 
-#landing-page .section-3 .button-section > .telegram {
+#landing-page .section-3 .button-section>.telegram {
     position: absolute;
     height: 7rem;
     right: 5rem;
 }
 
-#landing-page .section-3 .button-section > .x {
+#landing-page .section-3 .button-section>.x {
     position: absolute;
     height: 7rem;
     right: -5rem;
     top: 3rem;
 }
 
-#landing-page .section-3 .button-section > .arrow {
+#landing-page .section-3 .button-section>.arrow {
     right: -20rem;
     position: absolute;
     bottom: 1rem;
@@ -176,4 +235,11 @@ section 3
 
 #landing-page .section-3 p {
     font-size: 30px;
+}
+
+
+@media (max-width: 400px) {
+    #landing-page .content {
+        flex-direction: column;
+    }
 }
