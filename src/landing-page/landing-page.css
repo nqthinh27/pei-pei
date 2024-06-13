@@ -22,6 +22,7 @@
     margin-bottom: 0px;
     font-size: 140px;
 }
+
 #landing-page .section-1-mobile h1,
 #landing-page .section-2-mobile h1,
 #landing-page .section-3-mobile h1 {
@@ -37,12 +38,13 @@
     margin-bottom: 0px;
     font-size: 80px;
 }
+
 #landing-page .section-1-mobile h2,
 #landing-page .section-2-mobile h2,
 #landing-page .section-3-mobile h2 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #landing-page .section-1 h3,
@@ -52,6 +54,7 @@
     margin-bottom: 0px;
     font-size: 58px;
 }
+
 #landing-page .section-1-mobile h3,
 #landing-page .section-2-mobile h3,
 #landing-page .section-3-mobile h3 {
@@ -67,6 +70,7 @@
     margin-bottom: 0px;
     font-size: 40px;
 }
+
 #landing-page .section-1-mobile h4,
 #landing-page .section-2-mobile h4,
 #landing-page .section-3-mobile h4 {
@@ -83,6 +87,7 @@
     margin-bottom: 0px;
     font-size: 30px;
 }
+
 #landing-page .section-1-mobile h5,
 #landing-page .section-2-mobile h5,
 #landing-page .section-3-mobile h5 {
@@ -110,12 +115,79 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-top: 5%;
+}
+
+#landing-page .section-1 {
+    background-color: var(--pink);
+    flex: 1;
+}
+
+#landing-page .section-2 {
+    background-color: var(--black);
+    flex: 1;
+}
+
+#landing-page .section-3 {
+    background-color: var(--yellow);
+    flex: 1;
+}
+
+#landing-page .content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 /* 
 section 1
  */
 
+#landing-page .section-1,
+#landing-page .section-2,
+#landing-page .section-3 {
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#landing-page .section-1 h1 {
+    font-weight: bold;
+    color: var(--red);
+    -webkit-text-stroke: 8px #000;
+    padding-top: 5%;
+}
+
+#landing-page .button {
+    margin-top: 0.5rem;
+    padding: 15px 60px;
+    background-color: var(--red);
+    color: #fff;
+    border: 3px solid var(--black);
+    transform: rotate(5deg);
+}
+
+#landing-page .text-section>* {
+    padding-bottom: 2rem;
+}
+
+#landing-page .button-section>* {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/* mobile */
 #landing-page .section-1-mobile,
 #landing-page .section-2-mobile,
 #landing-page .section-3-mobile {
@@ -143,7 +215,6 @@ section 1
     padding-top: 5%;
 }
 
-
 #landing-page .button-mobile {
     margin-top: 5px;
     padding: 20px 60px;
@@ -155,7 +226,7 @@ section 1
 
 
 #landing-page .text-section-mobile>* {
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 #landing-page .button-section-mobile>* {
@@ -166,6 +237,36 @@ section 1
 /*  
 section 2
 */
+
+#landing-page .section-2 {
+    position: relative;
+    padding: 0 5rem 5rem 5rem;
+    box-sizing: border-box;
+}
+
+#landing-page .section-2 .header {
+    font-weight: bold;
+    color: var(--red);
+    -webkit-text-stroke: 3px #fff;
+}
+
+#landing-page .section-2 .content {
+    color: #fff;
+}
+
+#landing-page .section-2 h5 {
+    text-align: start;
+}
+
+#landing-page .section-2 .token-supply {
+    text-align: start;
+}
+
+#landing-page .section-2 .token-supply>* {
+    margin-bottom: 0.5em;
+}
+
+/* mobile */
 
 #landing-page .section-2 {
     /* position: relative; */
@@ -237,9 +338,46 @@ section 3
     font-size: 30px;
 }
 
+/* mobile */
 
-@media (max-width: 400px) {
-    #landing-page .content {
+#landing-page .section-3-mobile .button-section-mobile {
+    margin-top: 5px;
+    height: 7rem;
+    position: relative;
+}
+
+#landing-page .section-3-mobile .text-section-mobile h2 {
+    margin-top: 15%;
+    -webkit-text-stroke: 2px #000;
+    letter-spacing: 5px;
+}
+
+#landing-page .section-3-mobile .button-section-mobile>.telegram-mobile {
+    height: 60px;
+}
+
+#landing-page .section-3-mobile .button-section-mobile>.x-mobile {
+    height: 60px;
+}
+
+#landing-page .section-3-mobile .button-section-mobile>.arrow-mobile {
+    height: 60px;
+    right: -150px;
+    /* bottom: 1px; */
+}
+
+#landing-page .section-3-mobile p {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+    #landing-page {
+        display: flex;
         flex-direction: column;
+        height: auto;
     }
+}
+
+.pointer {
+    cursor: pointer;
 }
